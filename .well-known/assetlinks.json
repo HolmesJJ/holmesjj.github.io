@@ -2,7 +2,7 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.example.healdi_android",
+    "package_name": "com.projectreset.resetapp",
     "sha256_cert_fingerprints":
     ["63:84:BB:EB:40:DF:29:A0:83:85:72:6E:9C:45:93:FA:16:54:A7:CD:F7:79:67:35:B7:F0:F0:FF:44:4F:B9:B2"]
   }
