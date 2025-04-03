@@ -16,10 +16,21 @@
       background-color: #f8f8f8;
       color: #333;
     }
+    a {
+      margin-top: 20px;
+      color: #007bff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <h2>Processing login...</h2>
   <p>Please wait, redirecting to the app.</p>
+  <a href="https://holmesjj.github.io">Click here if not redirected</a>
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://holmesjj.github.io";
+    }, 2000);
+  </script>
 </body>
 </html>
