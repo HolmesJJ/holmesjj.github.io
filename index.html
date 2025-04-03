@@ -26,11 +26,17 @@
 <body>
   <h2>Processing login...</h2>
   <p>Please wait, redirecting to the app.</p>
-  <a href="https://holmesjj.github.io">Click here if not redirected</a>
+  <a id="manualLink" href="#">Click here if not redirected</a>
   <script>
-    setTimeout(() => {
-      window.location.href = "https://holmesjj.github.io";
-    }, 2000);
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const appParams = [];
+      for (const [key, value] of params.entries()) {
+        appParams.push(`${encodeURIComponent(key)}=${encodeURIComponent(value)}`);
+      }
+      const redirectUri = `com.projectreset.resetapp://oauth2redirect?${appParams.join("&")}`;
+      document.getElementById("manualLink").href = redirectUri;
+    })();
   </script>
 </body>
 </html>
