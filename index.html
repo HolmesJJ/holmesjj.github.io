@@ -34,7 +34,7 @@
       for (const [key, value] of params.entries()) {
         appParams.push(`${encodeURIComponent(key)}=${encodeURIComponent(value)}`);
       }
-      const redirectUri = `com.projectreset.resetapp://oauth2redirect?${appParams.join("&")}`;
+      const redirectUri = `com.projectreset.resetapp://callback?${appParams.join("&")}`;
       document.getElementById("manualLink").href = redirectUri;
     })();
   </script>
